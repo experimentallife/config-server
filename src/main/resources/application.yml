@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: configserver
+  cloud:
+    config:
+      enabled: true
+      server:
+        git:
+          url: https://github.com/experimentallife/config-development-k8s
